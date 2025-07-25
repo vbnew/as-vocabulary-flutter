@@ -1,8 +1,8 @@
 allprojects {
-  repositories {
-        maven { url 'https://maven.aliyun.com/repository/google' }       // 替代 google()
-        maven { url 'https://maven.aliyun.com/repository/central' }      // 替代 mavenCentral()
-        maven { url 'https://maven.aliyun.com/repository/public' }       // 通用开源包
+    repositories {
+        maven {
+            url = uri("https://mirrors.cloud.tencent.com/nexus/repository/maven-public/")
+        }
         google()
         mavenCentral()
     }
